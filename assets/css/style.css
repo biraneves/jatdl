@@ -84,3 +84,34 @@ button {
 button:hover {
     background-color: var(--button-hover-color);
 }
+
+#tasks-list {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+#tasks-list input {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: var(--border-color);
+}
